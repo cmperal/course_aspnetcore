@@ -1,4 +1,4 @@
-import { VehiculeFormComponent } from './components/vehicule-form/vehicule-form.component';
+
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { FormsModule } from '@angular/forms';
@@ -10,10 +10,13 @@ import { NavMenuComponent } from './components/navmenu/navmenu.component';
 import { HomeComponent } from './components/home/home.component';
 import { FetchDataComponent } from './components/fetchdata/fetchdata.component';
 import { CounterComponent } from './components/counter/counter.component';
+import { VehiculeFormComponent } from './components/vehicule-form/vehicule-form.component';
+
 
 
 @NgModule({
     declarations: [
+        HomeComponent,
         AppComponent,
         NavMenuComponent,
         CounterComponent,
@@ -26,6 +29,7 @@ import { CounterComponent } from './components/counter/counter.component';
         FormsModule,
         RouterModule.forRoot([
             { path: '', redirectTo: 'home', pathMatch: 'full' },
+            { path: 'vehicules/new', component: VehiculeFormComponent },
             { path: 'home', component: HomeComponent },
             { path: 'counter', component: CounterComponent },
             { path: 'fetch-data', component: FetchDataComponent },
