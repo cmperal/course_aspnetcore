@@ -6,12 +6,10 @@ namespace vega.Models
 {
     public class Feature
     {
-        public int Id {get; set;}
-
+        public int Id { get; set; }
+        
         [Required]
         [StringLength(255)]
         public string Name { get; set; }
-
-        public string Description { get; set; }
     }
 }
