@@ -11,7 +11,9 @@ namespace vega.Controllers.Resources
     {
         public int Id { get; set; }
 
-        public ModelResource Model {get; set;}   
+        public KeyValuePairResource Model { get; set; }   
+        
+        public KeyValuePairResource Make { get; set; }
 
         public bool IsRegistered { get; set; }
 
@@ -19,11 +21,11 @@ namespace vega.Controllers.Resources
         
         public DateTime LastUpdate { get; set; }   
 
-        public ICollection<FeatureResource> Features { get; set; }
+        public ICollection<KeyValuePairResource> Features { get; set; }
 
         public VehicleResource()
         {
-            Features = new Collection<FeatureResource>();
+            Features = new Collection<KeyValuePairResource>();
         }
     }
 }

@@ -34,7 +34,7 @@ namespace vega.Models
 
         public Vehicle()
         {
-            Features = new Collection<VehicleFeature>();
+            Features = new List<VehicleFeature>();
         }
 
     }
