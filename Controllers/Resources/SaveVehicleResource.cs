@@ -2,7 +2,7 @@ using System;
 using System.Collections.Generic;
 using System.Collections.ObjectModel;
 using System.ComponentModel.DataAnnotations;
-using vega.Models;
+using vega.Core.Models;
 using vega.Controllers.Resources;
 
 namespace vega.Controllers.Resources
